@@ -26,8 +26,6 @@ class Arena
         if @gladiators.first.weapon == "Trident" && @gladiators.last.weapon == "Club"
           @gladiators.delete(gladiators.first)
         end
-        if @gladiators.first.weapon == @gladiators.last.weapon
-          @gladiators = []
       end
   end
 end
