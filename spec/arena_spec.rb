@@ -77,8 +77,8 @@ describe Arena do
 
     context "when Club v Spear" do
       it "kills: club when fighting spear" do
-        arena.add_gladiator(maximus)
         arena.add_gladiator(ephates)
+        arena.add_gladiator(maximus)
         arena.fight
         expect(arena.gladiators.count).to eq(1)
         expect(arena.gladiators.first).to eq(maximus)
