@@ -18,6 +18,10 @@ class Arena
   def fight
     @gladiators.any? do |_|
       if @gladiators.length == 2
+        if @gladiators[0].weapon == "Spear" && @gladiators[1].weapon == "Trident"
+          @gladiators.delete(gladiators[0])
+        end
+
       end
     end
   end
