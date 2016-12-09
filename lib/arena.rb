@@ -14,4 +14,11 @@ class Arena
       @gladiators << gladiator
     end
   end
+
+  def fight
+    @gladiators.any? do |_|
+      if @gladiators.length == 2
+      end
+    end
+  end
 end
