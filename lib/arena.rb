@@ -19,12 +19,12 @@ class Arena
       if @gladiators.length == 2
         if @gladiators.first.weapon == "Spear" && @gladiators.last.weapon == "Trident"
           @gladiators.delete(gladiators.first)
-        end
-        if @gladiators.first.weapon == "Club" && @gladiators.last.weapon == "Spear"
+        elsif @gladiators.first.weapon == "Club" && @gladiators.last.weapon == "Spear"
           @gladiators.delete(gladiators.first)
-        end
-        if @gladiators.first.weapon == "Trident" && @gladiators.last.weapon == "Club"
+        elsif @gladiators.first.weapon == "Trident" && @gladiators.last.weapon == "Club"
           @gladiators.delete(gladiators.first)
+        else @gladiators.first.weapon == @gladiators.last.weapon
+          @gladiators = []
         end
       end
   end
